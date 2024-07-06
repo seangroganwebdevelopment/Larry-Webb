@@ -32,12 +32,12 @@ textarea {
     /* FONTS  */
 
     --FF: "Nunito", sans-serif;
-    --FF-HEADINGS: "Fugaz One", cursive;
+    --FF-HEADINGS: Georgia;
     --FS: clamp(1rem, 2.2vh, 1.5rem);
 
     /* COLORS */
 
-    --BGCOLOR: #e5dae9;
+    --BGCOLOR: #D1AE9B;
     background-color: var(--BGCOLOR);
     --ALT-BGCOLOR: #C9C9C9;
 
@@ -132,6 +132,58 @@ nav {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #D1AE9B;
 }
+
+/* Newsletter Subscription Section */
+#newsletter {
+    background-color: var(--ALT-BGCOLOR);
+    padding: 50px 20px;
+    text-align: center;
+    font-family: var(--FF-HEADINGS);
+}
+
+.newsletter-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.newsletter-container h3 {
+    margin-bottom: 20px;
+    color: var(--BGCOLOR);
+    font-family: var(--FF-HEADINGS);
+}
+
+.newsletter-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--FF);
+}
+
+.subscribeButton {
+    background-color: #D1AE9B;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.subscribeButton:hover {
+    background-color: darken(#D1AE9B, 10%);
+}
+
 
 #services,
 #portfolio,
