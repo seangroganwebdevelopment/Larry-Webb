@@ -19,5 +19,5 @@ To do list 24.07.06
 Newsletter
 - welcome email (Python, Javascript?)
 - do by programming ourselves? from what number, how many addresses. 
-   
+- make sure to integrate unsubscribe function into programme
 
