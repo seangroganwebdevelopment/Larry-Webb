@@ -11,5 +11,13 @@ To do list 24.07.06
 - Hero photo on big screen and laptop sizes
 - album buttom: where to?
 - subcribe button. Link email service. 
+- subscribe button. :active
+- apply hover effects to navbar, Lara logo
+- social media
+- mobile website: hamburger obscured by dropdown
+
+Newsletter
+- welcome email (Python, Javascript?)
+- do by programming ourselves? from what number, how many addresses. 
    
 
