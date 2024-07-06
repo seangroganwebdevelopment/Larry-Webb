@@ -27,13 +27,13 @@ textarea {
 
 :root {
 
-    
+
 
     /* FONTS  */
 
     --FF: "Nunito", sans-serif;
-    --FF-HEADINGS: "Fugaz One", cursive; 
-    --FS: clamp(1rem, 2.2vh, 1.5rem); 
+    --FF-HEADINGS: "Fugaz One", cursive;
+    --FS: clamp(1rem, 2.2vh, 1.5rem);
 
     /* COLORS */
 
@@ -41,15 +41,15 @@ textarea {
     background-color: var(--BGCOLOR);
     --ALT-BGCOLOR: #C9C9C9;
 
-  }
+}
 
-  /* || UTILITY CLASSES */
+/* || UTILITY CLASSES */
 
 
 /* ------------------------ */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -58,11 +58,11 @@ body {
 header {
     background: rgba(0, 0, 0, 0.15);
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
     display: flex;
     justify-content: space-between;
-    position: fixed; 
-    width: 100%; 
+    position: fixed;
+    width: 100%;
     align-items: center;
 }
 
@@ -74,7 +74,8 @@ nav {
 }
 
 .logo {
-    margin-left: 20px;
+    margin-top: -5px; 
+    margin-left: 40px;
     font-size: 1.5em;
 }
 
@@ -89,6 +90,7 @@ nav {
     list-style: none;
     display: flex;
     margin-right: 20px;
+    font-size: 1.5rem;
 }
 
 .nav-links li {
@@ -112,6 +114,8 @@ nav {
 
 #hero h1 {
     padding-bottom: 11px;
+    font-size: 2.6rem;
+    font-weight: 80%;
 }
 
 .hero-text {
@@ -121,17 +125,29 @@ nav {
 }
 
 .heroButton {
-    padding: 1rem; 
-    margin: 1rem; 
+    padding: 1rem;
+    margin: 1rem;
     border-radius: 11px;
-    border: none;}
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #D1AE9B;
+}
 
-#services, #portfolio, #about, #blog, #contact {
+#services,
+#portfolio,
+#about,
+#blog,
+#contact {
     padding: 50px 20px;
     text-align: center;
 }
 
-.service, .project, .bio, .team, .blog-post, form {
+.service,
+.project,
+.bio,
+.team,
+.blog-post,
+form {
     margin: 20px 0;
 }
 
@@ -189,4 +205,3 @@ footer {
         width: 100%;
     }
 }
-

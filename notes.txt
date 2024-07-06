@@ -3,3 +3,10 @@ To do list 24.06.29
 - Lara logo image
 - photo adjust on laptop size
 - add email newsletter subscription
+- dropdown language memory
+- change font of links and headings (georgia)
+
+To do list 24.07.06
+
+- Hero photo on big screen and laptop sizes
+- Lara logo image
