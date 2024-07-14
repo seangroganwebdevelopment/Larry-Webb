@@ -1,10 +1,8 @@
 To do list 24.06.29 
 
-- Lara logo image
 - photo adjust on laptop size
-- add email newsletter subscription
+- add email newsletter subscription ()
 - dropdown language memory
-- change font of links and headings (georgia)
 
 To do list 24.07.06
 
@@ -21,3 +19,6 @@ Newsletter
 - do by programming ourselves? from what number, how many addresses. 
 - make sure to integrate unsubscribe function into programme
 
+
+Drawings:
+- put on website (pen drawings)
