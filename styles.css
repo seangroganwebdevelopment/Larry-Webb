@@ -259,6 +259,7 @@ footer {
     .hamburger {
         display: block;
         margin-right: 20px;
+        margin-top: -40px; 
     }
 
     .nav-links {
@@ -306,7 +307,7 @@ footer {
 @media (min-width: 901px) {
     #hero {
         background: url(images/Lara\ Grogan_The\ Sculptor_max1200px.png);
-        width: 100%;
+        max-width: 100%;
         height: 100vh;
       
         background-position: top;
