@@ -113,8 +113,12 @@ nav {
 
 
 
+/* -------------------------------------
+            HERO SECTION
+ --------------------------------------- */
 
-/* Base styles for the hero section */
+
+
 #hero {
     background: #c1c5c4;
     /* Assuming a background color */
@@ -124,18 +128,12 @@ nav {
     text-align: center;
     padding: 20px;
     height: 100vh;
-    /* Full height */
 }
-
-
 
 .container {
     display: flex;
-    /* Establishes a flex container */
     width: 100%;
-    /* Takes full width of the parent */
     margin-top: 70px;
-
 }
 
 .image-container img {
@@ -146,7 +144,6 @@ nav {
 }
 
 .heroButton {
-    /* display: inline-block; */
     cursor: pointer;
     padding: 1rem;
     margin: 1rem;
@@ -155,13 +152,7 @@ nav {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #ac8672;
     transition: transform 0.2s;
-    /* Smooth transition for transform property */
 }
-
-
-
-
-
 
 .box {
     flex: 1;
@@ -185,6 +176,7 @@ nav {
     margin: 5px;
     /* Adds space between sections */
 }
+
 .concerts {
     max-width: 800px;
     margin: auto;
@@ -197,11 +189,14 @@ nav {
     padding: 10px 0;
 }
 
-.date, .event, .location {
+.date,
+.event,
+.location {
     margin-right: 10px;
 }
 
-.info-button, .watch-button {
+.info-button,
+.watch-button {
     margin-left: 10px;
     padding: 5px 10px;
     border: none;
@@ -260,21 +255,11 @@ footer {
 }
 
 
+/* ---------------MEDIA QUERIES ------------------- */
 
 
-/* Media query for screens wider than 600px */
 
-
-@media (min-width: 600px) {
-    .hero {
-        flex-direction: column;
-        /* Horizontal layout */
-    }
-
-    .hero-item {
-        flex: 1 1 50%;
-    }
-}
+/* Media query for screens under 600px */
 
 
 @media (max-width: 600px) {
@@ -313,3 +298,19 @@ footer {
         flex-direction: row;
     }
 }
+
+/* Media query for screens wider than 600px */
+
+
+@media (min-width: 600px) {
+    .hero {
+        flex-direction: column;
+        /* Horizontal layout */
+    }
+
+    .hero-item {
+        flex: 1 1 50%;
+    }
+}
+
+/* Media query for screens wider than 600px */

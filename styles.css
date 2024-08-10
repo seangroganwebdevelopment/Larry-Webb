@@ -109,13 +109,12 @@ nav {
 
 .nav-links a:hover {
     color: #D1AE9B;
-
 }
 
 /* HEADER ------------------------ */
 
 #hero {
-    background: url('images/Lara\ Grogan_The\ Sculptor_Profile.jpg') no-repeat center center/cover;
+    background: url('images/Lara\ Grogan_The\ Sculptor_Profile.jpg') no-repeat center cover;
     padding-top: 250px;
     /* Adjust the value as needed */
     color: #fff;
@@ -255,12 +254,29 @@ footer {
     text-decoration: none;
 }
 
+/* 
+-----------------------------------------------
+                    MEDIA QUERIES
+----------------------------------------------- 
+*/
+
+/* media query below 500px  */
+
+#hero {
+    background: url('images/Lara\ Grogan_The\ Sculptor_max500px.png');
+    padding: -120px; 
+    background-size: cover;
+    background-position: 10% bottom; 
+    height: 100vh; 
+}
+
+/* media query below 600px  */
 
 @media (max-width: 600px) {
     .hamburger {
         display: block;
         margin-right: 20px;
-        margin-top: -40px; 
+        margin-top: -40px;
     }
 
     .nav-links {
@@ -288,9 +304,8 @@ footer {
         width: 100%;
     }
 
-
     #hero {
-        background: url(images/Lara\ Grogan_The\ Sculptor_max600px.png);
+        background: url('images/Lara\ Grogan_The\ Sculptor_max600px.png');
         background-size: cover;
 
     }
@@ -308,17 +323,20 @@ footer {
 @media (min-width: 901px) {
     #hero {
         background: url(images/Lara\ Grogan_The\ Sculptor_max1200px.png);
+        background-size: cover no-repeat;
+
+
         max-width: 100%;
         height: 100vh;
-      
-        background-position: top;
-        background-repeat: no-repeat;
+
+
+
     }
 
     .hero-text {
         background: rgba(0, 0, 0, 0.5);
         padding: 10px;
-        margin-left: 710px; 
+        margin-left: 710px;
         margin-bottom: 110px;
         border-radius: 5px;
     }
@@ -334,13 +352,13 @@ footer {
 @media (min-width: 1200px) {
     #hero {
         background: url(images/Lara\ Grogan_The\ Sculptor_max1400px.png);
-        
+        background-size: cover;
     }
 }
 
 @media (min-width: 1440px) {
     #hero {
         background: url(images/Lara\ Grogan_The\ Sculptor_max1400px.png);
-        background-size: cover;
+
     }
 }
