@@ -86,9 +86,7 @@ nav {
 
 .hamburger {
     display: none;
-    font-size: 1.5em;
-    margin-right: 20px;
-    cursor: pointer;
+
 }
 
 .nav-links {
@@ -262,19 +260,7 @@ footer {
 
 /* media query below 500px  */
 
-@media (max-width: 500px) {
-    body {
-        padding-top: 15px; 
-    }
-#hero {
-    background: url('images/Lara\ Grogan_The\ Sculptor_max500px.png');
 
-    padding: -50px; 
-    background-size: cover;
-    background-position: 10% bottom; 
-    height: 100vh; 
-}
-}
 
 /* media query below 600px  */
 
@@ -283,6 +269,47 @@ footer {
         display: block;
         margin-right: 20px;
         margin-top: -40px;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    .hamburger span {
+        background: #fff;
+        display: block;
+        height: 3px;
+        width: 100%;
+        position: relative;
+        transition: all 0.3s ease;
+    }
+    
+    .hamburger span:nth-child(1) {
+        top: 0;
+    }
+    
+    .hamburger span:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .hamburger span:nth-child(3) {
+        bottom: 0;
+    }
+    
+    /* Active state (cross) */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 50%;
+        transform-origin: center;
+    }
+    
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 50%;
+        transform-origin: center;
     }
 
     .nav-links {
@@ -291,7 +318,7 @@ footer {
         margin: 0;
         position: absolute;
         right: 20px;
-        top: 50px;
+        top: 60px;
         background: #333;
         padding: 10px;
         border-radius: 5px;
@@ -311,10 +338,24 @@ footer {
     }
 
     #hero {
-        /* background: url('images/Lara\ Grogan_The\ Sculptor_max600px.png'); */
+        background: url('images/Lara\ Grogan_The\ Sculptor_max600px.png');
         background-size: cover;
 
     }
+}
+
+@media (max-width: 460px) {
+    body {
+        padding-top: 12px; 
+    }
+#hero {
+    background: url('images/Lara\ Grogan_The\ Sculptor_max500px.png');
+
+    padding: -50px; 
+    background-size: cover;
+    background-position: 10% bottom; 
+    height: 100vh; 
+}
 }
 
 @media (min-width: 601px) {
