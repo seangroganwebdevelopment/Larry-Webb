@@ -37,7 +37,7 @@ textarea {
 
     /* COLORS */
 
-    --BGCOLOR: #D1AE9B;
+    --BGCOLOR: #2b1408;
     background-color: var(--BGCOLOR);
     --ALT-BGCOLOR: #C9C9C9;
 
@@ -262,12 +262,18 @@ footer {
 
 /* media query below 500px  */
 
+@media (max-width: 500px) {
+    body {
+        padding-top: 15px; 
+    }
 #hero {
     background: url('images/Lara\ Grogan_The\ Sculptor_max500px.png');
-    padding: -120px; 
+
+    padding: -50px; 
     background-size: cover;
     background-position: 10% bottom; 
     height: 100vh; 
+}
 }
 
 /* media query below 600px  */
@@ -305,7 +311,7 @@ footer {
     }
 
     #hero {
-        background: url('images/Lara\ Grogan_The\ Sculptor_max600px.png');
+        /* background: url('images/Lara\ Grogan_The\ Sculptor_max600px.png'); */
         background-size: cover;
 
     }
@@ -323,10 +329,10 @@ footer {
 @media (min-width: 901px) {
     #hero {
         background: url(images/Lara\ Grogan_The\ Sculptor_max1200px.png);
-        background-size: cover no-repeat;
+        background-size: cover center no-repeat;
 
 
-        max-width: 100%;
+        width: 50%; 
         height: 100vh;
 
 
