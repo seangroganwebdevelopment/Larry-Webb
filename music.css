@@ -79,16 +79,17 @@ nav {
     font-size: 1.5em;
 }
 
-/* .logo:hover {
-   
+.logo:hover {
+ background-color: #b7abb8;
+ /* padding: 5px;  (causes a jump) */
+ border-radius: 25px;  
+ transition: 2s ease; 
     
-} */
+}
 
 .hamburger {
     display: none;
-    font-size: 1.5em;
-    margin-right: 20px;
-    cursor: pointer;
+  
 }
 
 .nav-links {
@@ -253,6 +254,9 @@ footer {
     .hamburger {
         display: block;
         margin-right: 20px;
+        font-size: 1.5em;
+        margin-top: -50px; 
+        cursor: pointer;
     }
 
     .nav-links {
@@ -262,7 +266,7 @@ footer {
         position: absolute;
         right: 20px;
         top: 50px;
-        background: #333;
+        background: #7c7a7a;
         padding: 10px;
         border-radius: 5px;
     }
