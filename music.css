@@ -80,10 +80,12 @@ nav {
 }
 
 .logo:hover {
- background-color: #b7abb8;
+    background-color: rgba(183, 171, 184, 0.35); 
+ 
  /* padding: 5px;  (causes a jump) */
  border-radius: 25px;  
- transition: 2s ease; 
+ box-shadow: 0 0 15px rgba(183, 171, 184, 0.25); /* Add a blur effect around the edges */
+ transition: 1.2s ease; 
     
 }
 

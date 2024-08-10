@@ -37,7 +37,7 @@ textarea {
 
     /* COLORS */
 
-    --BGCOLOR: #2b1408;
+    --BGCOLOR: #241f1a;
     background-color: var(--BGCOLOR);
     --ALT-BGCOLOR: #C9C9C9;
 
@@ -53,6 +53,15 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    height: 100vh;
+    margin: 0;
+    background:
+        linear-gradient(to top left, #49443f transparent 50%),
+        linear-gradient(to top right, #49443f, transparent 50%),
+        linear-gradient(to bottom left, #49443f, transparent 50%),
+        linear-gradient(to bottom right, #f16d21, transparent 50%);
+    /* background-blend-mode: screen; */
 }
 
 header {
@@ -281,31 +290,31 @@ footer {
         position: relative;
         transition: all 0.3s ease;
     }
-    
+
     .hamburger span:nth-child(1) {
         top: 0;
     }
-    
+
     .hamburger span:nth-child(2) {
         top: 50%;
         transform: translateY(-50%);
     }
-    
+
     .hamburger span:nth-child(3) {
         bottom: 0;
     }
-    
+
     /* Active state (cross) */
     .hamburger.active span:nth-child(1) {
         transform: rotate(45deg);
         top: 50%;
         transform-origin: center;
     }
-    
+
     .hamburger.active span:nth-child(2) {
         opacity: 0;
     }
-    
+
     .hamburger.active span:nth-child(3) {
         transform: rotate(-45deg);
         top: 50%;
@@ -344,19 +353,30 @@ footer {
     }
 }
 
+/* media query 460px and below  */
+
+
 @media (max-width: 460px) {
     body {
-        padding-top: 12px; 
+        padding-top: 12px;
     }
-#hero {
-    background: url('images/Lara\ Grogan_The\ Sculptor_max500px.png');
 
-    padding: -50px; 
-    background-size: cover;
-    background-position: 10% bottom; 
-    height: 100vh; 
+    #hero {
+        background: url('images/Lara\ Grogan_The\ Sculptor_max500px.png');
+
+        padding: -50px;
+        background-size: cover;
+        background-position: 10% bottom;
+        height: 100vh;
+
+        margin: 0 auto;
+    }
 }
-}
+
+
+
+
+/* media query 601px and above */
 
 @media (min-width: 601px) {
     #hero {
@@ -367,24 +387,49 @@ footer {
     }
 }
 
+
+/* media query 901px and above */
+
 @media (min-width: 901px) {
+
+    body {
+        background:
+        linear-gradient(to top left, #4d3a2c, rgb(22, 20, 20));
+      
+        background-blend-mode: screen;
+        ;
+    }
+
+    .logo {
+        margin-left: 160px; 
+    }
+
     #hero {
-        background: url(images/Lara\ Grogan_The\ Sculptor_max1200px.png);
-        background-size: cover center no-repeat;
+        background: url(images/Lara\ Grogan_The\ Sculptor_max1200px.png) no-repeat center;
+        background-size: contain;
 
-
-        width: 50%; 
+        width: 78%;
         height: 100vh;
 
-
-
+        margin: 0 auto;
     }
+
+    .blurred-box {
+        width: 300px;
+        height: 200px;
+        padding: 20px;
+        background-color: white; /* Background color of the box */
+        border-radius: 15px; /* Optional: rounded corners */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Blurred shadow for the edges */
+        margin: 50px auto; /* Centering the box */
+    }
+    
 
     .hero-text {
         background: rgba(0, 0, 0, 0.5);
         padding: 10px;
-        margin-left: 710px;
-        margin-bottom: 110px;
+        margin-left: 0px;
+        margin-bottom: 40px;
         border-radius: 5px;
     }
 
