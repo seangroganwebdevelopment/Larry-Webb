@@ -116,7 +116,7 @@ nav {
 
 /* Base styles for the hero section */
 #hero {
-    background: #D1AE9B;
+    background: #c1c5c4;
     /* Assuming a background color */
     display: flex;
     align-items: center;
@@ -185,9 +185,37 @@ nav {
     margin: 5px;
     /* Adds space between sections */
 }
+.concerts {
+    max-width: 800px;
+    margin: auto;
+}
 
+.concert {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
 
+.date, .event, .location {
+    margin-right: 10px;
+}
 
+.info-button, .watch-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #978199;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #8b2727;
+    margin: 10px 0;
+}
 
 
 #services,
