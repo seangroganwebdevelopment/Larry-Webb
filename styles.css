@@ -362,7 +362,7 @@ footer {
     }
 
     #hero {
-        background: url('images/Lara\ Grogan_The\ Sculptor_max500px.png');
+        background: url('images/Lara\ Grogan_The\ Sculptor_max500\(1\).png');
 
         padding: -50px;
         background-size: cover;
@@ -394,14 +394,20 @@ footer {
 
     body {
         background:
-        linear-gradient(to top left, #4d3a2c, rgb(22, 20, 20));
-      
+            linear-gradient(to top left, #4d3a2c, rgb(22, 20, 20));
+
         background-blend-mode: screen;
         ;
     }
 
+    header {
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+
+
     .logo {
-        margin-left: 160px; 
+        margin-left: 160px;
     }
 
     #hero {
@@ -418,12 +424,16 @@ footer {
         width: 300px;
         height: 200px;
         padding: 20px;
-        background-color: white; /* Background color of the box */
-        border-radius: 15px; /* Optional: rounded corners */
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Blurred shadow for the edges */
-        margin: 50px auto; /* Centering the box */
+        background-color: white;
+        /* Background color of the box */
+        border-radius: 15px;
+        /* Optional: rounded corners */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        /* Blurred shadow for the edges */
+        margin: 50px auto;
+        /* Centering the box */
     }
-    
+
 
     .hero-text {
         background: rgba(0, 0, 0, 0.5);
