@@ -1,78 +1,58 @@
 @import url();
 
-/* --------------RESEt-------------- */
-
+/* Reset */
 *,
 *::after,
 *::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* outline: 1px solid lime !important; */
 }
 
-/* img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-} */
-
-/* input,
-button,
-textarea {
-    font: inherit; 
-} */
-
-/* || VArIABLES */
-
+/* Variables */
 :root {
-
-
-
-    /* FONTS  */
-
     --FF: "Nunito", sans-serif;
-    --FF-HEADINGS: Georgia;
+    --FF-HEADINGS: Georgia, 'Times New Roman', Times, serif;
     --FS: clamp(1rem, 2.2vh, 1.5rem);
 
-    /* COLORS */
-
     --BGCOLOR: #241f1a;
-    background-color: var(--BGCOLOR);
     --ALT-BGCOLOR: #C9C9C9;
-
+    --PRIMARY-COLOR: #D1AE9B;
+    --DARK-BGCOLOR: #837670;
 }
 
-/* || UTILITY CLASSES */
-
-
-/* ------------------------ */
-
+/* Global Styles */
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    font-family: var(--FF-HEADINGS);
+    background: linear-gradient(to top left, #49443f transparent 50%),
+                linear-gradient(to top right, #49443f transparent 50%),
+                linear-gradient(to bottom left, #49443f transparent 50%),
+                linear-gradient(to bottom right, #f16d21 transparent 50%);
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-
     height: 100vh;
-    margin: 0;
-    background:
-        linear-gradient(to top left, #49443f transparent 50%),
-        linear-gradient(to top right, #49443f, transparent 50%),
-        linear-gradient(to bottom left, #49443f, transparent 50%),
-        linear-gradient(to bottom right, #f16d21, transparent 50%);
-    /* background-blend-mode: screen; */
+    overflow-x: hidden;
 }
 
+/* Header */
 header {
     background: rgba(0, 0, 0, 0.15);
     color: #fff;
-    padding: 20px 0;
+    padding: 20px;
+    /* height: 20px;  */
     display: flex;
     justify-content: space-between;
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     align-items: center;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+header.scrolled {
+    background: rgba(236, 176, 176, 0.35);
 }
 
 nav {
@@ -86,16 +66,6 @@ nav {
     margin-top: -5px;
     margin-left: 40px;
     font-size: 1.5em;
-}
-
-.logo:hover {
-    /* background-color: red */
-
-}
-
-.hamburger {
-    display: none;
-
 }
 
 .nav-links {
@@ -115,21 +85,25 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #D1AE9B;
+    color: var(--PRIMARY-COLOR);
 }
 
-/* HEADER ------------------------ */
+.hamburger {
+    display: none;
+}
 
+/* Hero Section */
 #hero {
-    background: url('images/Lara\ Grogan_The\ Sculptor_Profile.jpg') no-repeat center cover;
-    padding-top: 250px;
-    /* Adjust the value as needed */
+    background: url('images/Lara\ Grogan_The\ Sculptor_Profile.jpg') no-repeat center;
+    background-size: cover;
     color: #fff;
     height: 100vh;
+    /* height: calc(100vh - 80px) */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding-top: 80px; /* Adjust based on header height */
 }
 
 #hero h1 {
@@ -151,10 +125,9 @@ nav {
     margin: 1rem;
     border-radius: 11px;
     border: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #D1AE9B;
+    font-family: var(--FF-HEADINGS);
+    background-color: var(--PRIMARY-COLOR);
     transition: transform 0.2s;
-    /* Smooth transition for transform property */
 }
 
 .heroButton:hover {
@@ -164,7 +137,6 @@ nav {
 
 .heroButton:active {
     transform: scale(1.1);
-    /* Scale up to 110% of original size */
 }
 
 /* Newsletter Subscription Section */
@@ -176,7 +148,7 @@ nav {
 }
 
 .newsletter-container {
-    background: #D1AE9B;
+    background: var(--PRIMARY-COLOR);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -201,7 +173,7 @@ input[type="email"] {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: var(--FF-HEADINGS);
 }
 
 .subscribeButton {
@@ -216,63 +188,20 @@ input[type="email"] {
 }
 
 .subscribeButton:hover {
-    background-color: darken(#D1AE9B, 10%);
+    background-color: #715c56;
 }
 
-
-#services,
-#portfolio,
-#about,
-#blog,
-#contact {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.service,
-.project,
-.bio,
-.team,
-.blog-post,
-form {
-    margin: 20px 0;
-}
-
+/* Footer */
 footer {
-    background-color: #837670;
+    background-color: var(--DARK-BGCOLOR);
     color: #fff;
     text-align: center;
     padding: 10px 0;
 }
 
-.language-switcher {
-    margin-top: 10px;
-}
+/* Responsive Adjustments */
 
-.language-switcher a {
-    color: #fff;
-    margin: 0 5px;
-    text-decoration: none;
-}
-
-.social-links a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-/* 
------------------------------------------------
-                    MEDIA QUERIES
------------------------------------------------ 
-*/
-
-/* media query below 500px  */
-
-
-
-/* media query below 600px  */
-
+/* media query below 600px */
 @media (max-width: 600px) {
     .hamburger {
         display: block;
@@ -280,45 +209,6 @@ footer {
         margin-top: -40px;
         font-size: 1.5em;
         cursor: pointer;
-    }
-
-    .hamburger span {
-        background: #fff;
-        display: block;
-        height: 3px;
-        width: 100%;
-        position: relative;
-        transition: all 0.3s ease;
-    }
-
-    .hamburger span:nth-child(1) {
-        top: 0;
-    }
-
-    .hamburger span:nth-child(2) {
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    .hamburger span:nth-child(3) {
-        bottom: 0;
-    }
-
-    /* Active state (cross) */
-    .hamburger.active span:nth-child(1) {
-        transform: rotate(45deg);
-        top: 50%;
-        transform-origin: center;
-    }
-
-    .hamburger.active span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active span:nth-child(3) {
-        transform: rotate(-45deg);
-        top: 50%;
-        transform-origin: center;
     }
 
     .nav-links {
@@ -341,126 +231,72 @@ footer {
         display: flex;
     }
 
-    nav {
-        justify-content: space-between;
-        width: 100%;
-    }
-
     #hero {
         background: url('images/Lara\ Grogan_The\ Sculptor_max600px.png');
         background-size: cover;
-
+        height: 100vh;
+        padding-top: 60px;
     }
 }
 
-/* media query 460px and below  */
-
-
+/* media query below 460px */
 @media (max-width: 460px) {
     body {
         padding-top: 12px;
     }
 
     #hero {
-        background: url('images/Lara\ Grogan_The\ Sculptor_max500\(1\).png');
-
-        padding: -50px;
+        background: url('images/Lara\ Grogan_The\ Sculptor_max500.png') no-repeat 10% bottom;
         background-size: cover;
-        background-position: 10% bottom;
         height: 100vh;
-
         margin: 0 auto;
+        padding-top: 60px;
     }
 }
 
-
-
-
 /* media query 601px and above */
-
 @media (min-width: 601px) {
     #hero {
         background: url(images/Lara\ Grogan_The\ Sculptor_max900px.png);
-        padding-top: 350px;
-        /* Adjust the value as needed */
+        padding-top: 80px; /* Adjust the value based on header height */
         background-size: cover;
+        height: 100vh;
     }
 }
 
-
 /* media query 901px and above */
-
 @media (min-width: 901px) {
-
     body {
-        background-color: #D1AE9B;
-        background-blend-mode: screen;
-        padding-top: 129px; 
-        padding-bottom: -120px; 
+        background-color: var(--PRIMARY-COLOR);
     }
 
     header {
-        background: rgba(0, 0, 0, 0);
-
+        background: rgba(0, 0, 0, 0.15);
         display: flex;
         justify-content: center;
-        padding-top: 36px; 
-        margin-top: -130px; 
         transition: background-color 0.3s ease;
-    }
-
-    header.scrolled {
-        background: rgba(236, 176, 176, 0.35); /* Solid black background */
-    }
-
-    .logo {
-        margin-left: 160px;
-    }
-
-    .nav-links {
-        list-style: none;
-        display: flex;
-        margin-right: 160px;
-        font-size: 1.8rem;
+        z-index: 1000;
     }
 
     #hero {
         background: url(images/Lara\ Grogan_The\ Sculptor_max1200px.png) no-repeat center;
         background-size: cover;
-        width: 40%;
-        height: 76vh;
+        height: calc(100vh - 80px);
         margin: 0 auto;
-        margin-bottom: 30px;
     }
 
     .blurred-box {
         width: 300px;
-        /* max-width creates a nice effect, of the image being very narrow */
         height: 200px;
         padding: 20px;
         background-color: white;
-        /* Background color of the box */
         border-radius: 15px;
-        /* Optional: rounded corners */
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-        /* Blurred shadow for the edges */
         margin: 50px auto;
-        /* Centering the box */
     }
-
-
-    .hero-text {
-        background: rgba(0, 0, 0, 0.5);
-        padding: 10px;
-        margin-left: 0px;
-        margin-bottom: 40px;
-        border-radius: 5px;
-    }
-
-   
-   
 }
 
+/* media query 1200px and above */
 @media (min-width: 1200px) {
     #hero {
         background: url(images/Lara\ Grogan_The\ Sculptor_max1400px.png);
@@ -468,6 +304,7 @@ footer {
     }
 }
 
+/* media query 1440px and above */
 @media (min-width: 1440px) {
     #hero {
         background: url(images/Lara\ Grogan_The\ Sculptor_max1400px.png);

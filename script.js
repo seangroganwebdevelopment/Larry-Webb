@@ -31,3 +31,18 @@ function toggleMenu() {
         hamburger.innerHTML = '&#9776;'; // Hamburger (☰)
     }
 }
+
+// Add JavaScript for Scroll Detection
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const header = document.querySelector("header");
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 50) { // Adjust the scrollY value based on when you want the color to change
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+    });
+});
+
