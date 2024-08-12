@@ -428,7 +428,7 @@ footer {
         background: url(images/Lara\ Grogan_The\ Sculptor_max1200px.png) no-repeat center;
         background-size: cover;
         width: 40%;
-        height: 76vh;
+        height: 75vh;
         margin: 0 auto;
         margin-bottom: 30px;
     }
@@ -457,8 +457,7 @@ footer {
         border-radius: 5px;
     }
 
-   
-   
+     
 }
 
 @media (min-width: 1200px) {
@@ -471,5 +470,6 @@ footer {
 @media (min-width: 1440px) {
     #hero {
         background: url(images/Lara\ Grogan_The\ Sculptor_max1400px.png);
+        background-size: cover; 
     }
 }
