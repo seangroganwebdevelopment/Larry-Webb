@@ -89,13 +89,12 @@ nav {
 }
 
 .logo:hover {
-    /* background-color: red */
-
+    background-color: rgb(199, 173, 173);
+    border-radius: 21%;
 }
 
 .hamburger {
     display: none;
-
 }
 
 .nav-links {
@@ -106,7 +105,7 @@ nav {
 }
 
 .nav-links li {
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 .nav-links a {
@@ -115,15 +114,20 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #D1AE9B;
+    color: #f5d9ca;
 }
 
-/* HEADER ------------------------ */
+
+
+/* ---------------------------- 
+
+        HEADER
+
+------------------------ */
 
 #hero {
     background: url('images/Lara\ Grogan_The\ Sculptor_Profile.jpg') no-repeat center cover;
     padding-top: 250px;
-    /* Adjust the value as needed */
     color: #fff;
     height: 100vh;
     display: flex;
@@ -154,7 +158,6 @@ nav {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #D1AE9B;
     transition: transform 0.2s;
-    /* Smooth transition for transform property */
 }
 
 .heroButton:hover {
@@ -163,11 +166,19 @@ nav {
 }
 
 .heroButton:active {
-    transform: scale(1.1);
+    transform: scale(1.2);
     /* Scale up to 110% of original size */
 }
 
-/* Newsletter Subscription Section */
+
+
+/* ---------------------------- 
+
+NEWSLETTER SUBSCRIPTION SECTION
+
+------------------------ */
+
+
 #newsletter {
     background-color: var(--ALT-BGCOLOR);
     padding: 50px 20px;
@@ -267,13 +278,14 @@ footer {
 ----------------------------------------------- 
 */
 
-/* media query below 500px  */
+/* media query for screens below 500px  */
 
 
 
-/* media query below 600px  */
+/* media query for screens below 600px  */
 
 @media (max-width: 600px) {
+
     .hamburger {
         display: block;
         margin-right: 20px;
@@ -346,6 +358,12 @@ footer {
         width: 100%;
     }
 
+    .logo:hover {
+        background-color: rgb(46, 38, 38);
+       
+    }
+
+    
     #hero {
         background: url('images/Lara\ Grogan_The\ Sculptor_max600px.png');
         background-size: cover;
@@ -353,7 +371,11 @@ footer {
     }
 }
 
-/* media query 460px and below  */
+
+/* ---------------------
+media query 460px and below  
+---------------------------*/
+
 
 
 @media (max-width: 460px) {
@@ -368,15 +390,15 @@ footer {
         background-size: cover;
         background-position: 10% bottom;
         height: 100vh;
-
         margin: 0 auto;
     }
 }
 
 
+/* ---------------------
+media query 601px and above  
+---------------------------*/
 
-
-/* media query 601px and above */
 
 @media (min-width: 601px) {
     #hero {
@@ -385,43 +407,56 @@ footer {
         /* Adjust the value as needed */
         background-size: cover;
     }
+
+    .logo:hover {
+        background-color: rgb(46, 38, 38);
+       
+    }
+
 }
 
-
-/* media query 901px and above */
+/* ---------------------
+media query 901px and above  
+---------------------------*/
 
 @media (min-width: 901px) {
 
     body {
         background-color: #D1AE9B;
         background-blend-mode: screen;
-        padding-top: 129px; 
-        padding-bottom: -120px; 
+        padding-top: 129px;
+        padding-bottom: -120px;
     }
 
     header {
         background: rgba(0, 0, 0, 0);
-
+        /* background: rgba(236, 176, 176, 0.35); */
         display: flex;
         justify-content: center;
-        padding-top: 36px; 
-        margin-top: -130px; 
+        padding-top: 36px;
+        margin-top: -130px;
         transition: background-color 0.3s ease;
     }
 
     header.scrolled {
-        background: rgba(236, 176, 176, 0.35); /* Solid black background */
+        background: rgba(236, 176, 176, 0.35);
+        /* Solid black background */
     }
 
     .logo {
-        margin-left: 160px;
+        margin-left: 120px;
     }
 
     .nav-links {
         list-style: none;
         display: flex;
-        margin-right: 160px;
+        margin-right: 120px;
         font-size: 1.8rem;
+    }
+
+    .logo:hover {
+        background-color: rgb(199, 173, 173);
+       
     }
 
     #hero {
@@ -448,7 +483,6 @@ footer {
         /* Centering the box */
     }
 
-
     .hero-text {
         background: rgba(0, 0, 0, 0.5);
         padding: 10px;
@@ -456,8 +490,6 @@ footer {
         margin-bottom: 40px;
         border-radius: 5px;
     }
-
-     
 }
 
 @media (min-width: 1200px) {
@@ -470,6 +502,6 @@ footer {
 @media (min-width: 1440px) {
     #hero {
         background: url(images/Lara\ Grogan_The\ Sculptor_max1400px.png);
-        background-size: cover; 
+        background-size: cover;
     }
 }

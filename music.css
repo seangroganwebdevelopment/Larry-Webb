@@ -80,18 +80,19 @@ nav {
 }
 
 .logo:hover {
-    background-color: rgba(183, 171, 184, 0.35); 
- 
- /* padding: 5px;  (causes a jump) */
- border-radius: 25px;  
- box-shadow: 0 0 15px rgba(183, 171, 184, 0.25); /* Add a blur effect around the edges */
- transition: 1.2s ease; 
-    
+    background-color: rgba(183, 171, 184, 0.35);
+
+    /* padding: 5px;  (causes a jump) */
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgba(183, 171, 184, 0.25);
+    /* Add a blur effect around the edges */
+    transition: 1.2s ease;
+
 }
 
 .hamburger {
     display: none;
-  
+
 }
 
 .nav-links {
@@ -114,10 +115,6 @@ nav {
     color: #D1AE9B;
 }
 
-
-
-
-/* Base styles for the hero section */
 #hero {
     background: #D1AE9B;
     /* Assuming a background color */
@@ -127,10 +124,7 @@ nav {
     text-align: center;
     padding: 20px;
     height: 100vh;
-    /* Full height */
 }
-
-
 
 .container {
     display: flex;
@@ -138,7 +132,7 @@ nav {
     width: 100%;
     /* Takes full width of the parent */
     margin-top: 70px;
-
+    /* height: calc(1px - 100vh) */
 }
 
 .image-container img {
@@ -160,11 +154,6 @@ nav {
     transition: transform 0.2s;
     /* Smooth transition for transform property */
 }
-
-
-
-
-
 
 .box {
     flex: 1;
@@ -211,12 +200,7 @@ form {
     margin: 20px 0;
 }
 
-footer {
-    background-color: #837670;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
+
 
 .language-switcher {
     margin-top: 10px;
@@ -234,30 +218,37 @@ footer {
     text-decoration: none;
 }
 
+footer {
+    background-color: rgb(116, 94, 83);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 
-
-
-/* Media query for screens wider than 600px */
-
-
-@media (min-width: 600px) {
-    .hero {
-        flex-direction: column;
-        /* Horizontal layout */
-    }
-
-    .hero-item {
-        flex: 1 1 50%;
-    }
 }
+
+/* 
+-----------------------------------------------
+                    MEDIA QUERIES
+----------------------------------------------- 
+*/
+
+
+/* Media query for screens under  600px */
+
+
 
 
 @media (max-width: 600px) {
+
+    body {
+        /* padding-bottom: 140px; */
+    }
+
     .hamburger {
         display: block;
         margin-right: 20px;
         font-size: 1.5em;
-        margin-top: -50px; 
+        margin-top: -50px;
         cursor: pointer;
     }
 
@@ -286,8 +277,33 @@ footer {
         width: 100%;
     }
 
-    .image-container {
+    #hero {
+        /* height: 70; */
+    }
+
+    .container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        /* height: calc(0px + 80vh);  */
+        height: 80vh; 
+        padding-bottom: 200px;
+    }
+
+    footer {
+        background-color: rgba(117, 71, 50, 0.5);  
+        position: fixed; 
+        bottom: 0; 
+        width: 100%;
+    }
+}
+
+/* Media query for screens wider than 600px */
+@media (min-width: 600px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-item {
+        flex: 1 1 50%;
     }
 }
